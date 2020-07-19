@@ -4,5 +4,6 @@ class Person
   :pant_length, :pant_width
   
   def initialize(attributes)
-    attrivutes.each {|key, value
+    attrivutes.each {|key, value| self.send(("#{key}="), value)}
+  end
 end
